@@ -1,0 +1,72 @@
+{
+  "_generated": {
+    "system": "package-json@1.0.0",
+    "status": "generated",
+    "edit": "edit src/ — dependencies and exports derive from imports; everything else preserved"
+  },
+  "name": "@teamscala/notify-cache",
+  "capability": "Hot in-memory snapshot cache with Postgres LISTEN/NOTIFY-driven invalidation. The single sanctioned notify-cache surface.",
+  "tier": "foundation",
+  "type": "module",
+  "version": "0.1.6",
+  "description": "Hot in-memory snapshot cache with Postgres LISTEN/NOTIFY-driven invalidation. The single sanctioned notify-cache surface.",
+  "imports": {
+    "#notify-cache/*": "./src/*",
+    "#notify-cache/*.ts": "./src/*.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bun-types": "*",
+    "@happy-dom/global-registrator": "*",
+    "@testing-library/react": "*"
+  },
+  "exports": {
+    "./configure": {
+      "types": "./src/configure.d.ts",
+      "default": "./src/configure.ts"
+    },
+    "./configure.ts": {
+      "types": "./src/configure.d.ts",
+      "default": "./src/configure.ts"
+    },
+    "./create-notify-cache": {
+      "types": "./src/create-notify-cache.d.ts",
+      "default": "./src/create-notify-cache.ts"
+    },
+    "./create-notify-cache.ts": {
+      "types": "./src/create-notify-cache.d.ts",
+      "default": "./src/create-notify-cache.ts"
+    },
+    "./notify-cache": {
+      "types": "./src/notify-cache.d.ts",
+      "default": "./src/notify-cache.ts"
+    },
+    "./notify-cache.ts": {
+      "types": "./src/notify-cache.d.ts",
+      "default": "./src/notify-cache.ts"
+    },
+    "./registry": {
+      "types": "./src/registry.d.ts",
+      "default": "./src/registry.ts"
+    },
+    "./registry.ts": {
+      "types": "./src/registry.d.ts",
+      "default": "./src/registry.ts"
+    },
+    "./types": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    },
+    "./types.ts": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    }
+  },
+  "repository": "https://github.com/teamgbg/bun-foundation-notify-cache",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
