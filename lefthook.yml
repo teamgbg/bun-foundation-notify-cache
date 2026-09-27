@@ -13,10 +13,9 @@
 assert_lefthook_installed: true
 min_version: 2.1.14
 
-prepare-commit-msg:
-  commands:
-    co-pane:
-      run: bash ../guard-hook-transport/hooks/co-pane "{1}"
+# Co-Pane commit trailers are stamped by the scala-tools commit verb itself
+# (commit_claim_gate -> commit_co_pane, probe 2026-09-27: trailer lands with
+# no lefthook prepare-commit-msg wired) — this file no longer duplicates it.
 
 pre-commit:
   commands:
