@@ -1,0 +1,9 @@
+# @system codegen
+# @status generated
+# @edit change codegen_output 'all-repos-lefthook', then regenerate
+#
+# Stub: Lefthook scripts must live under <source_dir>/<hook-name>/ inside
+# the repo, so this is the per-repo anchor to the shared transport. git hands
+# prepare-commit-msg its arguments — the message file ($1) and the message
+# source — and lefthook forwards them to this script; "$@" passes them on.
+exec bash ../guard-hook-transport/hooks/prepare-commit-msg "$@"
