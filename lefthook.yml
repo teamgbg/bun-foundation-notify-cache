@@ -114,7 +114,7 @@ min_version: 2.1.15
 # real daemon verdict proves the copy resolved).
 remotes:
   - git_url: https://github.com/teamgbg/guard-hook-transport.git
-    ref: git/guard-hook-transport@0.1.8
+    ref: git/guard-hook-transport@0.1.9
     refetch: false
     configs:
       - hooks-remote.yml
