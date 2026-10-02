@@ -141,6 +141,17 @@ ecosystem.config.js
 server/home/.claude/
 server/home/.codex/
 
+# The staging tree a cli-startup AUDIENCE render places for another machine.
+# It was written HERE because the staging root was a path literal compiled into
+# the renderer, so 494 generated startup files came to be tracked in this repo
+# and every regen re-leaked them (the tree the render owns, committed to the
+# checkout it renders across). The staging root is a row
+# (`machine_profile.audience_staging_root`) outside every checkout since
+# 2026-10-02; this entry keeps the path ignored through every regen anyway, so
+# the literal's residue can never be re-tracked by a sync. TEMPLATE level, for
+# the reason the ecosystem.config.js entry above gives.
+server/audiences/
+
 # Vendor agent-skill scaffolding. The Prisma 8 CLI writes a skill tree into
 # the directory it runs in (.claude/skills, .agents/skills, .cursor/skills,
 # .devin/skills) — supplier docs, never source, and a skills tree inside a
